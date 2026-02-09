@@ -1,4 +1,4 @@
-const API = 'http://localhost:3300/api';
+const API = 'https://backend-final-project-9kxj.onrender.com/api';
 
 function getToken() {
   return localStorage.getItem('token');
@@ -70,7 +70,7 @@ async function login(e) {
   }
 
   try {
-    const res = await fetch('http://localhost:3300/api/auth/login', {
+    const res = await fetch('https://backend-final-project-9kxj.onrender.com/api/auth/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -194,3 +194,4 @@ function requireAdmin() {
 }
 
 document.addEventListener('DOMContentLoaded', updateNav);
+
